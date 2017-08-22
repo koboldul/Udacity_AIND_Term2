@@ -1,0 +1,84 @@
+<html>
+<head>
+  <title>Mimic Me!</title>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+	<script  src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"  integrity="sha256-eGE6blurk5sHj+rmkfsGYeKyZx3M4bG+ZlFyA7Kns7E="  crossorigin="anonymous"></script>
+  <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="https://download.affectiva.com/js/3.2/affdex.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css" />
+  <link rel="stylesheet" href="mimic.css" />
+</head>
+<body>
+	<div class="jumbotron padding-sm " style="max-height: 75px;">
+	  <div class="container text-center">
+		<h2>Mimic Me?</h2>      
+	  </div>
+	</div>
+	</br> 
+	
+	<div class="container">
+		<div id="progressbar">No pressure.<span id="presureSize"></span></div> 
+	  
+		<div class="row">
+		 <div class="col-sm-5" > 
+		  <div class="panel panel-info">
+				<div class="panel-heading">Mimic Me!</div>
+				<div class="padding-sm">
+					<div id="game">
+						<div>
+							<h2 id="level"></h2>
+						</div>
+						<div class="row">
+							<div class="col-sm-6">Oh yeah? But can you do this?</div>
+							<div class="col-sm-6" id="target">?</div>
+						</div>
+					</div>
+					<div id="score">Score: 0 / 0</div>
+					<div id="controls">
+						<button id="start" onclick="onStart()" class="btn-success">Start</button>
+						<button id="stop" onclick="onStop()" class="btn-danger">Stop</button>
+						<button id="reset" onclick="onReset()" class="btn-primary">Reset</button>
+					</div>
+					<div id="instructions">
+						<h5>INSTRUCTIONS</h5>
+						<p>
+						<ul>
+							<li>Press <strong>Start</strong> to initialize the detector.</li>
+							<li>Your current emoji will be shown next to your head.</li>
+							<li>Mimic in the alotted time each emoji being displayed to score a point and impress your friends!</li>
+							<li>Press <strong>Stop</strong> to end the detector.</li>
+							<li>Watch the tracking results and log messages for more information.</li>
+						</ul>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		 <div class="col-sm-7">
+			<div class="panel panel-info">
+				<div class="panel-heading">Smile!...or not</div>
+				<div id="camera"></div>
+			</div>
+		</div>
+		</div>
+		<div class="row">
+		 <div class="col-sm-6"id="instructions">
+			<div id="results-container">
+			  <h5>EMOTION TRACKING RESULTS</h5>
+			  <div id="results"></div>
+			</div>
+		 </div>
+		 <div class="col-sm-6">
+			<div id="logs-container">
+          <h5>DETECTOR LOG MSGS</h5>
+          <p id="logs"></div>
+        </div>
+		</div>
+	
+		
+	  </div>
+  
+  <script type="text/javascript" src="mimic.js"></script>
+</body>
+</html>

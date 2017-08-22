@@ -1,0 +1,48 @@
+body { margin:0 auto; }
+
+div.left {
+  border-right: 1px solid #ccc;
+}
+
+div.top {
+  border-bottom: 1px solid #ccc;
+}
+
+#camera { width: 640px; height: 480px; padding: 0; }
+
+#game { height: 120px; }
+
+#target {
+  height: 80px;
+  font-family: Arial, sans-serif; 
+  font-size: 48pt;
+  text-align: center;
+}
+
+#score {
+  font-family: Courier, monospace; font-size: 12pt; font-weight: bold;
+}
+
+#results {
+  min-height: 160px;
+  font-size: 10pt;
+  word-wrap: break-word;
+}
+
+#logs {
+  font-size: 10pt;
+}
+
+.padding-sm { padding: .5em; }
+
+
+.ui-progressbar {
+  height: 2em;
+  text-align: left;
+  overflow: hidden;
+}
+.ui-progressbar .ui-progressbar-value {
+  margin: -1px;
+  height: 30px;
+  background-color: #ccc;
+}
